@@ -1,6 +1,10 @@
 import './Producto.component.css'
-export default function ProductoComponent({producto,titulo,funcionComprar}) {
+export default function ProductoComponent({ producto, titulo, onComprarProducto }) {
 
+
+    function comprar() {
+        onComprarProducto(producto)
+    }
 
     return (
         <li className='producto'>
@@ -20,7 +24,7 @@ export default function ProductoComponent({producto,titulo,funcionComprar}) {
                 </small>
             </div>
             <div>
-                <button onClick={funcionComprar}>comprar</button>
+                <button disabled={producto.stock <= 0} onClick={comprar}>comprar</button>
             </div>
 
         </li>

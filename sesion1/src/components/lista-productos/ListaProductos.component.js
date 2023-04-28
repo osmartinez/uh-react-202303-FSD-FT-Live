@@ -1,13 +1,13 @@
 import ProductoComponent from "../producto/Producto.component"
 
-export default function ListaProductosComponent ({listado,funcionComprar}){
+export default function ListaProductosComponent ({listado,onComprar}){
     
 
     
     return(
         <div>
             <ul>
-              {listado.map(x=> <ProductoComponent funcionComprar={funcionComprar} producto={x}></ProductoComponent>  )}
+              {listado.map(x=> <ProductoComponent onComprarProducto={onComprar} producto={x}></ProductoComponent>  )}
             </ul>
         </div>
     )
