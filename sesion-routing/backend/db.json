@@ -1,0 +1,26 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "titulo": "POST 1",
+      "texto": "ESTO ES UN TEXTO DEL POST 1"
+    },
+    {
+      "titulo": "POST 2",
+      "texto": "TEXTO POST 2",
+      "id": 2
+    },
+    {
+      "titulo": "POST 3",
+      "texto": "TEXTO POST 3",
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "email": "oscar@mail.com",
+      "password": "$2a$10$qGXy47dG1BB3rtt2KOXytOM./8SjS0uKBg5S9SDjjw7SX.r9vF9t2",
+      "id": 1
+    }
+  ]
+}
