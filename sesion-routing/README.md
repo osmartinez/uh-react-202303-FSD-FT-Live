@@ -1,2 +1,2 @@
-# Sesion 4
-Routing, context, state, axios y (login a medias)
+# Sesion 4 y 5
+Routing, context, state, axios, autenticación, protección de rutas, redirección...
