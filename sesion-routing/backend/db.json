@@ -14,6 +14,26 @@
       "titulo": "POST 3",
       "texto": "TEXTO POST 3",
       "id": 3
+    },
+    {
+      "titulo": "POST 10",
+      "texto": "texto de un post",
+      "id": 4
+    },
+    {
+      "titulo": "POST 6",
+      "texto": "123",
+      "id": 5
+    },
+    {
+      "titulo": "post 8",
+      "texto": "567",
+      "id": 6
+    },
+    {
+      "titulo": "POST 9",
+      "texto": "123",
+      "id": 7
     }
   ],
   "users": [

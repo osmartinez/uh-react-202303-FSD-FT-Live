@@ -1,4 +1,4 @@
-import ListaPostsComponent from "../components/ListaPosts.component";
+import ListaPostsComponent from "../components/lista-posts/ListaPosts.component";
 
 export default function PostsPage(){
     return(

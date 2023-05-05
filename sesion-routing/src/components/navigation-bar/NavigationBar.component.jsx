@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { PostContext } from "../contexts/post.context";
+import { PostContext } from "../../contexts/post.context";
 
 export default function NavigationBarComponent(){
 

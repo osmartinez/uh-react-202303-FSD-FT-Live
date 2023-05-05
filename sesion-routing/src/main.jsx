@@ -7,13 +7,9 @@ import PostContextProvider from './contexts/post.context.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-
     <BrowserRouter>
       <PostContextProvider>
         <App />
       </PostContextProvider>
     </BrowserRouter>
-
-  </React.StrictMode>,
 )
