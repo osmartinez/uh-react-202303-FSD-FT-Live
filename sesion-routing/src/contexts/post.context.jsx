@@ -37,6 +37,13 @@ export default function PostContextProvider({ children }) {
                 // con payload
                 copia.posts.push(action.payload)
                 break
+            
+            case 'DELETE_POST':
+                const indice = copia.posts.findIndex(x=>x.id === Number(action.payload))
+                copia.posts.splice(
+                    indice
+                    ,1)
+            break
 
             case 'DO_LOGIN':
                 // con payload
@@ -50,6 +57,7 @@ export default function PostContextProvider({ children }) {
             case 'CHANGE_NAME':
                 copia.usuario.name = action.payload
                 break
+
 
             default: break
         }
@@ -123,10 +131,16 @@ export default function PostContextProvider({ children }) {
         dispatch({type: 'GET_SINGLE_POST', payload: respuesta.data})
     }
 
+    async function deletePost(id){
+        const respuesta = await axios.delete(BASEURL+`/posts/${id}`)
+
+        dispatch({type: 'DELETE_POST', payload: id })
+    }
+
 
     return (
         // <PostContext.Provider value={{ posts,usuario, addPost,login }}>
-        <PostContext.Provider value={{ posts: state.posts, usuario: state.usuario, postIndividual: state.postIndividual, addPost, login, registrar, cambiarNombre, cerrarSesion,getPostIndividual }}>
+        <PostContext.Provider value={{ posts: state.posts, usuario: state.usuario, postIndividual: state.postIndividual, addPost, login, registrar, cambiarNombre, cerrarSesion,getPostIndividual,deletePost }}>
             {children}
         </PostContext.Provider>
     )

@@ -23,7 +23,7 @@ function App() {
     <>
       <NavigationBarComponent></NavigationBarComponent>
       <Routes>
-        <Route path='/posts/nuevo' element={<PostNuevoPage></PostNuevoPage>} ></Route>
+        <Route path='/posts/nuevo' element={usuario?<PostNuevoPage></PostNuevoPage>:<Navigate to="/"></Navigate>} ></Route>
         <Route path='/posts' element={<PostsPage></PostsPage>} ></Route>
         <Route path='/login' element={usuario?<Navigate to="/area-privada" replace></Navigate>:<LoginPage></LoginPage>} ></Route>
         <Route path='/' element={<HomePage></HomePage>} ></Route>

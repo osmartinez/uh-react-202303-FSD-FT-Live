@@ -1,39 +1,9 @@
 {
   "posts": [
     {
-      "id": 1,
-      "titulo": "POST 1",
-      "texto": "ESTO ES UN TEXTO DEL POST 1"
-    },
-    {
-      "titulo": "POST 2",
-      "texto": "TEXTO POST 2",
-      "id": 2
-    },
-    {
-      "titulo": "POST 3",
-      "texto": "TEXTO POST 3",
-      "id": 3
-    },
-    {
-      "titulo": "POST 10",
-      "texto": "texto de un post",
-      "id": 4
-    },
-    {
-      "titulo": "POST 6",
-      "texto": "123",
-      "id": 5
-    },
-    {
-      "titulo": "post 8",
-      "texto": "567",
-      "id": 6
-    },
-    {
-      "titulo": "POST 9",
-      "texto": "123",
-      "id": 7
+      "titulo": "TEST SIN USUARIO",
+      "texto": "test sin usuario",
+      "id": 8
     }
   ],
   "users": [
@@ -63,7 +33,7 @@
     {
       "email": "test4@mail.com",
       "password": "$2a$10$Wkl3lV5n/Lk1CiPf9.bAMOc9HN/v8cQLPJ2ouFDOAnqevXVKvLbmW",
-      "name": "TEST4 CAMBIO",
+      "name": "TEST4 CAMBI**",
       "id": 5
     }
   ]

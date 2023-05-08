@@ -11,11 +11,17 @@ export default function NavigationBarComponent() {
             {usuario ? <p>Bienvenid@ {usuario.email}</p> : 'No estás loggeado'}
             <ul>
                 <li><Link to="/">Home</Link></li>
+                
                 {
                     usuario ? <li><Link to="/area-privada">Área privada</Link></li> : <li><Link to="/login">Login</Link></li>
                 }
+
+
                 <li><Link to="/posts">Posts</Link></li>
-                <li><Link to="/posts/nuevo">Crear post</Link></li>
+
+                {
+                    usuario? <li><Link to="/posts/nuevo">Crear post</Link></li>: ''
+                }
                 
                 {
                     usuario? <li><Link to="/logout">Cerrar sesión</Link></li> : ''
