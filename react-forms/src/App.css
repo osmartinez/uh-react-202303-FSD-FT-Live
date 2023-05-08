@@ -1,0 +1,14 @@
+*{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.formulario{
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.error-form{
+  font-size: 0.7em;
+  color: red;
+}
